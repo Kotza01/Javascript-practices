@@ -47,7 +47,7 @@ let $voiceText = d.getElementById("voice-text");
 let $voiceButton = d.getElementById("voice-button");
 let $voiceOption = d.getElementById("voice");
 
-d.addEventListener("DOMContentLoaded", (e) => {
+window.addEventListener("DOMContentLoaded", (e) => {
   hamburguerMenu($hamburgerButton, $sectionHamburger, $sectionHamburgerA);
   watch($startBtnWatch, $stopBtnWatch, $sectionTime, $sectionWatch);
   /**Se requiere id del audio, data-name del botonstart, data-name del boton end */
