@@ -498,7 +498,7 @@ button:disabled {
   transition: transform 0.2s ease-in-out;
 }
 
-.container-mini-videos {
+.container-small-videos {
   position: absolute;
   top: 39vw;
 
@@ -602,30 +602,34 @@ button:disabled {
 }
 
 @media screen and (max-width: 1440px) {
-  .container-mini-videos {
+  .container-small-videos {
     top: 36vw;
   }
 }
 
 @media screen and (max-width: 965px) {
-  .container-mini-videos {
+  .container-small-videos {
     grid-template-columns: repeat(auto-fit, minmax(115px, 220px));
     top: 48vw;
   }
 }
 
 @media screen and (max-width: 600px) {
+  .section-menu-hamburger {
+    left: 0%;
+  }
+
   .container-video {
     display: block;
     height: 245vw;
   }
-  .container-mini-videos {
+  .container-small-videos {
     display: block;
     position: initial;
     overflow-y: scroll;
   }
 
-  .container-mini-videos video {
+  .container-small-videos video {
     transform: scale(1, 1);
   }
 }
