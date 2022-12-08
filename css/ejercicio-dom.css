@@ -500,7 +500,7 @@ button:disabled {
 
 .container-mini-videos {
   position: absolute;
-  top: 57%;
+  top: 39vw;
 
   width: 100%;
   display: grid;
@@ -569,17 +569,53 @@ button:disabled {
   object-fit: contain;
 }
 
+.maze-area button {
+  width: 100px;
+  height: 45px;
+  border-radius: 0.6rem;
+  border: 1px solid #fff;
+
+  background-color: #44ce2e;
+
+  cursor: pointer;
+
+  transition: background-color ease-in-out 0.4s;
+}
+
+.maze-area button:hover {
+  background-color: #44ce2e60;
+}
+
+.maze-area button a {
+  text-decoration: none;
+  color: white;
+}
+
 /*utilities*/
 .gray {
   background-color: #f5ebeb;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 1440px) {
+  .container-mini-videos {
+    top: 36vw;
+  }
+}
+
+@media screen and (max-width: 965px) {
+  .container-mini-videos {
+    grid-template-columns: repeat(auto-fit, minmax(115px, 220px));
+    top: 48vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
   .container-video {
-    height: 500px;
+    display: block;
+    height: 245vw;
   }
   .container-mini-videos {
-    height: 400px;
+    display: block;
     position: initial;
     overflow-y: scroll;
   }
