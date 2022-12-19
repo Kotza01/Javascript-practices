@@ -150,7 +150,8 @@ header h1 {
 
 /*style for section*/
 .section {
-  min-height: 100vh;
+  position: relative;
+
   width: 100%;
 
   font-size: 2rem;
@@ -229,7 +230,7 @@ header h1 {
 
 /*Styles for container movement*/
 .container {
-  height: 65vh;
+  height: 500px;
   margin: 2rem;
   display: flex;
   align-items: center;
